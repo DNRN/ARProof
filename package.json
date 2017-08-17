@@ -1,0 +1,17 @@
+{
+  "name": "arproofofconept",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --w"
+  },
+  "author": "Dennis Christensen",
+  "license": "ISC",
+  "dependencies": {
+    "@argonjs/argon": "^1.0.0",
+    "@types/three": "^0.84.19",
+    "three": "^0.86.0"
+  }
+}
