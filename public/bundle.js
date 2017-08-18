@@ -69,11 +69,11 @@
 
 "use strict";
 
+/// <reference types="@argonjs/argon" />
 Object.defineProperty(exports, "__esModule", { value: true });
-//import * as Argon from '@argonjs/argon';
 var THREE = __webpack_require__(1);
-//const app = Argon.init();
-//app.context.setDefaultReferenceFrame(app.context.localOriginEastUpSouth);
+var app = Argon.init();
+app.context.setDefaultReferenceFrame(app.context.localOriginEastUpSouth);
 // initialize THREE
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera();
@@ -85,7 +85,7 @@ var renderer = new THREE.WebGLRenderer({
     logarithmicDepthBuffer: true
 });
 renderer.setPixelRatio(window.devicePixelRatio);
-//app.view.element.appendChild(renderer.domElement); 
+app.view.element.appendChild(renderer.domElement);
 
 
 /***/ }),

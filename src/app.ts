@@ -1,8 +1,11 @@
-//import * as Argon from '@argonjs/argon';
+/// <reference types="@argonjs/argon" />
+
+declare var Argon;
+
 import * as THREE from 'three';
 
-//const app = Argon.init();
-//app.context.setDefaultReferenceFrame(app.context.localOriginEastUpSouth);
+const app = Argon.init();
+app.context.setDefaultReferenceFrame(app.context.localOriginEastUpSouth);
 
 // initialize THREE
 const scene = new THREE.Scene();
@@ -15,4 +18,4 @@ const renderer = new THREE.WebGLRenderer({
     logarithmicDepthBuffer: true
 });
 renderer.setPixelRatio(window.devicePixelRatio);
-//app.view.element.appendChild(renderer.domElement);
+app.view.element.appendChild(renderer.domElement);

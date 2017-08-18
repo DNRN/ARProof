@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"tsc --w\" \"nodemon\"",
+    "start": "concurrently \"node server.js\"  \"webpack --progress --colors --watch\"",
     "build": "webpack"
   },
   "author": "Dennis Christensen",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@argonjs/argon": "^1.0.0",
     "@types/three": "^0.84.19",
+    "bootstrap": "^3.3.7",
     "express": "^4.15.4",
     "three": "^0.86.0"
   },
