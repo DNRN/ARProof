@@ -2,16 +2,25 @@
   "name": "arproofofconept",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc --w"
+    "start": "concurrently \"tsc --w\" \"nodemon\"",
+    "build": "webpack"
   },
   "author": "Dennis Christensen",
   "license": "ISC",
   "dependencies": {
     "@argonjs/argon": "^1.0.0",
     "@types/three": "^0.84.19",
+    "express": "^4.15.4",
     "three": "^0.86.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "ts-loader": "^2.3.3",
+    "webpack": "^3.5.5"
   }
 }
